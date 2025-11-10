@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent & Ride Prototype</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚗 Rent & Ride</h1>
+  </header>
+
+  <!-- Home Page -->
+  <section id="home" class="page active" data-aos="fade-up">
+    <h2>Choose Your Car</h2>
+    <div class="car-list">
+      <div class="car-card" data-model="Tesla Model 3" data-price="$80/day">
+        <h3>Tesla Model 3</h3>
+        <p>Price: $80/day</p>
+        <button class="viewDetailsBtn">View Details</button>
+      </div>
+      <div class="car-card" data-model="BMW X5" data-price="$100/day">
+        <h3>BMW X5</h3>
+        <p>Price: $100/day</p>
+        <button class="viewDetailsBtn">View Details</button>
+      </div>
+      <div class="car-card" data-model="Audi Q7" data-price="$90/day">
+        <h3>Audi Q7</h3>
+        <p>Price: $90/day</p>
+        <button class="viewDetailsBtn">View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details Page -->
+  <section id="details" class="page" data-aos="fade-up">
+    <h2 id="carModel">Car Details</h2>
+    <p id="carPrice"></p>
+    <button id="bookCar">Book Now</button>
+    <button class="back">← Back</button>
+  </section>
+
+  <!-- Booking Confirmation Modal -->
+  <div id="confirmModal" class="modal">
+    <div class="modal-content">
+      <p id="confirmText">Are you sure you want to book this car?</p>
+      <button id="confirmBtn">Confirm</button>
+      <button id="cancelBtn">Cancel</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
