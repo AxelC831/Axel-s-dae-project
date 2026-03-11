@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent & Ride Car Rental</title>
+</head>
+
+<body>
+
+   
+    <section id="about" class="section-area">
+        <h1>Rent & Ride Car Rentals</h1>
+        <p>Your trusted service for affordable and reliable vehicle rentals.</p>
+    </section>
+
+    <section id="industry" class="section-area">
+        <h2>About the Industry</h2>
+        <p>According to <cite>Ford Motor Company</cite>, innovation drives modern transportation.</p>
+    
+    </section>
+
+    <section id="links" class="section-area">
+        <h2>Helpful Links</h2>
+        <!-- Absolute link + new tab -->
+        <a href="https://www.ford.com" target="_blank" title="Ford Official Website">Visit Ford</a>
+        <br>
+        <!-- Relative link -->
+        <a href="about.html" title="About Rent & Ride">About Our Company</a>
+    </section>
+
+    <section id="pricing" class="section-area">
+        <h2>Rental Pricing</h2>
+        <table border="1" id="pricing-table" class="table-style">
+            <tr>
+                <td rowspan="2">Car Type</td>
+                <td colspan="2">Price Per Day</td>
+            </tr>
+            <tr>
+                <td>Weekday</td>
+                <td>Weekend</td>
+            </tr>
+            <tr>
+                <td>SUV</td>
+                <td>$60</td>
+                <td>$75</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="booking" class="section-area">
+        <h2>Car Reservation Form</h2>
+        <form action="#" method="post" id="reservation-form">
+            <label>Customer Name:</label>
+            <input type="text" name="username" required><br><br>
+
+            <label>Rental Details:</label><br>
+            <textarea name="details" rows="4" cols="30"></textarea><br><br>
+
+            <input type="checkbox" name="insurance" value="yes"> Add Insurance<br><br>
+
+            <input type="submit" value="Submit Reservation">
+        </form>
+    </section>
+
+    <section id="media" class="section-area">
+        <h2>Media Showcase</h2>
+
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+
+        <br><br>
+
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </section>
+
+    <section id="reserve" class="section-area">
+        <h2>Ready to Book?</h2>
+        <button onclick="alert('Thank you! Your reservation has been received.')">Reserve Now</button>
+    </section>
+
+</body>
+</html>
