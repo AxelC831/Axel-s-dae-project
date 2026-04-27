@@ -1,88 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rent & Ride Car Rental</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rent & Ride Car Rental</title>
+
+<style>
+
+body{
+    background-color:#f2f6ff;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#222;
+    margin:0;
+    padding:0;
+}
+
+#about{
+    background-color:#1f3c88;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+.section-area{
+    background-color:white;
+    margin:25px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+
+h2{
+    color:#1f3c88;
+}
+
+a{
+    color:#0066cc;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+table{
+    width:60%;
+    border-collapse:collapse;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+}
+
+input[type="text"], textarea{
+    width:60%;
+    padding:8px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+input[type="submit"]{
+    background-color:#1f3c88;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background-color:#2f55c4;
+}
+
+button{
+    background-color:#28a745;
+    color:white;
+    font-size:16px;
+    padding:12px 20px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:#218838;
+}
+
+</style>
+
 </head>
 
 <body>
 
-   
-    <section id="about" class="section-area">
-        <h1>Rent & Ride Car Rentals</h1>
-        <p>Your trusted service for affordable and reliable vehicle rentals.</p>
-    </section>
+<section id="about">
+<h1>Rent & Ride Car Rentals</h1>
+<p>Your trusted service for affordable and reliable vehicle rentals.</p>
+</section>
 
-    <section id="industry" class="section-area">
-        <h2>About the Industry</h2>
-        <p>According to <cite>Ford Motor Company</cite>, innovation drives modern transportation.</p>
-    
-    </section>
+<section class="section-area">
+<h2>About the Car Rental Industry</h2>
 
-    <section id="links" class="section-area">
-        <h2>Helpful Links</h2>
-        <!-- Absolute link + new tab -->
-        <a href="https://www.ford.com" target="_blank" title="Ford Official Website">Visit Ford</a>
-        <br>
-        <!-- Relative link -->
-        <a href="about.html" title="About Rent & Ride">About Our Company</a>
-    </section>
+<p>According to <cite>Ford Motor Company</cite>, innovation in vehicles and technology is shaping the future of transportation.</p>
 
-    <section id="pricing" class="section-area">
-        <h2>Rental Pricing</h2>
-        <table border="1" id="pricing-table" class="table-style">
-            <tr>
-                <td rowspan="2">Car Type</td>
-                <td colspan="2">Price Per Day</td>
-            </tr>
-            <tr>
-                <td>Weekday</td>
-                <td>Weekend</td>
-            </tr>
-            <tr>
-                <td>SUV</td>
-                <td>$60</td>
-                <td>$75</td>
-            </tr>
-        </table>
-    </section>
 
-    <section id="booking" class="section-area">
-        <h2>Car Reservation Form</h2>
-        <form action="#" method="post" id="reservation-form">
-            <label>Customer Name:</label>
-            <input type="text" name="username" required><br><br>
+</section>
 
-            <label>Rental Details:</label><br>
-            <textarea name="details" rows="4" cols="30"></textarea><br><br>
+<section class="section-area">
+<h2>Helpful Links</h2>
 
-            <input type="checkbox" name="insurance" value="yes"> Add Insurance<br><br>
+<p>
+<a href="https://www.ford.com" target="_blank" title="Ford Official Website">
+Visit Ford Official Website
+</a>
+</p>
 
-            <input type="submit" value="Submit Reservation">
-        </form>
-    </section>
+<p>
+<a href="about.html" title="About Rent & Ride">
+Learn More About Our Company
+</a>
+</p>
 
-    <section id="media" class="section-area">
-        <h2>Media Showcase</h2>
+</section>
 
-        <audio controls>
-            <source src="audio.mp3" type="audio/mpeg">
-            Your browser does not support audio.
-        </audio>
+<!-- TABLE -->
+<section class="section-area">
 
-        <br><br>
+<h2>Rental Pricing</h2>
 
-        <video width="320" height="240" controls>
-            <source src="video.mp4" type="video/mp4">
-            Your browser does not support video.
-        </video>
-    </section>
+<table border="1">
 
-    <section id="reserve" class="section-area">
-        <h2>Ready to Book?</h2>
-        <button onclick="alert('Thank you! Your reservation has been received.')">Reserve Now</button>
-    </section>
+<tr>
+<td rowspan="2"><b>Car Type</b></td>
+<td colspan="2"><b>Price Per Day</b></td>
+</tr>
+
+<tr>
+<td>Weekday</td>
+<td>Weekend</td>
+</tr>
+
+<tr>
+<td>SUV</td>
+<td>$60</td>
+<td>$75</td>
+</tr>
+
+<tr>
+<td>Sedan</td>
+<td>$45</td>
+<td>$55</td>
+</tr>
+
+</table>
+
+</section>
+
+<section class="section-area">
+
+<h2>Car Reservation Form</h2>
+
+<form action="#" method="post">
+
+<label>Customer Name:</label><br>
+<input type="text" name="username"><br><br>
+
+<label>Rental Details:</label><br>
+<textarea name="details" rows="4"></textarea><br><br>
+
+<input type="checkbox" name="insurance"> Add Insurance<br><br>
+
+<input type="submit" value="Submit Reservation">
+
+</form>
+
+</section>
+
+<section class="section-area">
+
+<h2>Media Showcase</h2>
+
+<p>Listen to a car sound:</p>
+
+<audio controls>
+<source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<br><br>
+
+<p>Watch a car promo video:</p>
+
+<video width="320" controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+
+</section>
+
+<!-- RESERVE BUTTON -->
+<section class="section-area">
+
+<h2>Ready to Book?</h2>
+
+<button onclick="alert('Thank you! Your reservation has been received.')">
+Reserve Now
+</button>
+
+</section>
 
 </body>
 </html>
